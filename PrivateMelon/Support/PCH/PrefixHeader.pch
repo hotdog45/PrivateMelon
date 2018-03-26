@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  PrivateMelon
+//
+//  Created by 李顺风 on 2018/3/26.
+//  Copyright © 2018年 李顺风. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <JSONModel/JSONModel.h>
+
+
+
+
+
+
+///Users/lishunfeng/Desktop/PrivateMelon/PrivateMelon/Support/PCH/PrefixHeader.pch
+
+
+
+
+#endif /* PrefixHeader_pch */
