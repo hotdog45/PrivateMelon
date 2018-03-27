@@ -18,11 +18,6 @@
 
 
 @interface LLMainTabBarController ()<UCCustomTabBarDelegate,UITabBarControllerDelegate>
-{
-    NSInteger  selectIndex;
-}
-@property (nonatomic, assign) NSInteger indexFlag;
-@property (nonatomic, strong) NSMutableArray *controllersArr;
 
 @end
 
@@ -42,20 +37,16 @@
     
     LLMomentsVC *vc1 = [[LLMomentsVC alloc] init];
     [self addChildViewController:vc1 image:@"home_normal" selectedImage:@"home_highlight" title:@"好友圈"];
-    [self.controllersArr addObject:vc1];
     
     LLDiscoverVC *vc2 = [[LLDiscoverVC alloc] init];
     [self addChildViewController:vc2 image:@"mycity_normal" selectedImage:@"mycity_highlight" title:@"发现"];
-    [self.controllersArr addObject:vc2];
     
     LLMessageVC *vc3 = [[LLMessageVC alloc] init];
     [self addChildViewController:vc3 image:@"message_normal" selectedImage:@"message_highlight" title:@"消息"];
-    [self.controllersArr addObject:vc3];
     
     //我
     LLMineVC *profile = [[LLMineVC alloc]init];
     [self addChildViewController:profile image:@"account_normal" selectedImage:@"account_highlight" title:@"自己"];
-    [self.controllersArr addObject:profile];
     
     UCCustomTabBar *tabBar = [[UCCustomTabBar alloc]init];
     tabBar.customTabBarDelegate = self;
@@ -75,13 +66,11 @@
     
     //标题
     childViewController.title = title;
-    
     //tabBarItem图片
     childViewController.tabBarItem.image = [UIImage imageNamed:image];
     childViewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     //tabBarItem字体的设置
-    //正常状态
     NSMutableDictionary *normalText = [NSMutableDictionary dictionary];
     normalText[NSForegroundColorAttributeName] = [UIColor colorWithRed:123/255.0 green:123/255.0 blue:123/255.0 alpha:1.0];
     [childViewController.tabBarItem setTitleTextAttributes:normalText forState:UIControlStateNormal];
@@ -100,21 +89,12 @@
 
 #pragma mark -- UITabBarControllerDelegate
 
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-
-}
-
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
    
     return true;
 }
 
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
-{
-    selectIndex = [self.tabBar.items indexOfObject:item];
-}
 
 
 
@@ -136,16 +116,7 @@
     [actionSheet showInView:viewController.view];
 }
 
-#pragma mark - Getter Methods
 
-- (NSMutableArray *)controllersArr
-{
-    if (nil == _controllersArr) {
-        _controllersArr = [[NSMutableArray alloc] initWithCapacity:5];
-    }
-    
-    return _controllersArr;
-}
 
 #pragma mark - UIActionSheetDelegate
 

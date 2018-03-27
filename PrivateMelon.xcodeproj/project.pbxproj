@@ -16,7 +16,6 @@
 		368570D02068DE5D003F4EBD /* UCBannerRecommedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570982068DE5C003F4EBD /* UCBannerRecommedModel.m */; };
 		368570D12068DE5D003F4EBD /* LLTestNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570992068DE5D003F4EBD /* LLTestNetWork.m */; };
 		368570D22068DE5D003F4EBD /* LLTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685709B2068DE5D003F4EBD /* LLTest2ViewController.m */; };
-		368570D32068DE5D003F4EBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685709C2068DE5D003F4EBD /* ViewController.m */; };
 		368570D42068DE5D003F4EBD /* LLTest1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3685709D2068DE5D003F4EBD /* LLTest1ViewController.xib */; };
 		368570D52068DE5D003F4EBD /* LLtest3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368570A02068DE5D003F4EBD /* LLtest3ViewController.xib */; };
 		368570D62068DE5D003F4EBD /* LLTest1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570A12068DE5D003F4EBD /* LLTest1ViewController.m */; };
@@ -85,7 +84,6 @@
 		368570992068DE5D003F4EBD /* LLTestNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTestNetWork.m; sourceTree = "<group>"; };
 		3685709A2068DE5D003F4EBD /* LLTest1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTest1ViewController.h; sourceTree = "<group>"; };
 		3685709B2068DE5D003F4EBD /* LLTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTest2ViewController.m; sourceTree = "<group>"; };
-		3685709C2068DE5D003F4EBD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3685709D2068DE5D003F4EBD /* LLTest1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLTest1ViewController.xib; sourceTree = "<group>"; };
 		3685709E2068DE5D003F4EBD /* UCBannerRecommedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCBannerRecommedModel.h; sourceTree = "<group>"; };
 		3685709F2068DE5D003F4EBD /* LLtest3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLtest3ViewController.h; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		368570A12068DE5D003F4EBD /* LLTest1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTest1ViewController.m; sourceTree = "<group>"; };
 		368570A22068DE5D003F4EBD /* LLTestNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTestNetWork.h; sourceTree = "<group>"; };
 		368570A32068DE5D003F4EBD /* LLTest2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLTest2ViewController.xib; sourceTree = "<group>"; };
-		368570A42068DE5D003F4EBD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		368570A52068DE5D003F4EBD /* LLTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTest2ViewController.h; sourceTree = "<group>"; };
 		368570A82068DE5D003F4EBD /* HXBaseJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXBaseJSONModel.m; sourceTree = "<group>"; };
 		368570A92068DE5D003F4EBD /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
@@ -534,7 +531,6 @@
 				368570992068DE5D003F4EBD /* LLTestNetWork.m */,
 				3685709A2068DE5D003F4EBD /* LLTest1ViewController.h */,
 				3685709B2068DE5D003F4EBD /* LLTest2ViewController.m */,
-				3685709C2068DE5D003F4EBD /* ViewController.m */,
 				3685709D2068DE5D003F4EBD /* LLTest1ViewController.xib */,
 				3685709E2068DE5D003F4EBD /* UCBannerRecommedModel.h */,
 				3685709F2068DE5D003F4EBD /* LLtest3ViewController.h */,
@@ -542,7 +538,6 @@
 				368570A12068DE5D003F4EBD /* LLTest1ViewController.m */,
 				368570A22068DE5D003F4EBD /* LLTestNetWork.h */,
 				368570A32068DE5D003F4EBD /* LLTest2ViewController.xib */,
-				368570A42068DE5D003F4EBD /* ViewController.h */,
 				368570A52068DE5D003F4EBD /* LLTest2ViewController.h */,
 			);
 			path = Test;
@@ -920,7 +915,6 @@
 				368570D22068DE5D003F4EBD /* LLTest2ViewController.m in Sources */,
 				368570DA2068DE5D003F4EBD /* LLBaseViewController.m in Sources */,
 				36857104206A2072003F4EBD /* LoginViewController.m in Sources */,
-				368570D32068DE5D003F4EBD /* ViewController.m in Sources */,
 				368570FA206A1FCA003F4EBD /* LLDiscoverVC.m in Sources */,
 				36857111206A346D003F4EBD /* UCCustomTabBar.m in Sources */,
 				368570FD206A1FFB003F4EBD /* LLMessageVC.m in Sources */,

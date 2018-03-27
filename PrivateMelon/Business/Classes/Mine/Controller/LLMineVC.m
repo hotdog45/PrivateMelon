@@ -16,9 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"自己";
     self.view.backgroundColor = LRRandomColor;
-    
+    self.navigationItem.leftBarButtonItem = nil;
+
 }
 
 @end

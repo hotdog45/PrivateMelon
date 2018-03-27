@@ -21,10 +21,7 @@
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
-    if (self.childViewControllers.count > 0) {
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back_personal_back"] style:UIBarButtonItemStylePlain target:self action:@selector(goBackAction)];
-    }
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back_personal_back"] style:UIBarButtonItemStylePlain target:self action:@selector(goBackAction)];
     
 }
 
