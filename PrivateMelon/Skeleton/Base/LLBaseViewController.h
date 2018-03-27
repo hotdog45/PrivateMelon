@@ -10,4 +10,9 @@
 
 @interface LLBaseViewController : UIViewController
 
+@property (nonatomic, strong) UITableView *tableView;
+
+
+
+
 @end

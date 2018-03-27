@@ -560,9 +560,9 @@
 			children = (
 				368570A82068DE5D003F4EBD /* HXBaseJSONModel.m */,
 				368570A92068DE5D003F4EBD /* BaseNavigationController.m */,
+				368570AC2068DE5D003F4EBD /* LLBaseViewController.h */,
 				368570AA2068DE5D003F4EBD /* LLBaseViewController.m */,
 				368570AB2068DE5D003F4EBD /* HXBaseJSONModel.h */,
-				368570AC2068DE5D003F4EBD /* LLBaseViewController.h */,
 				368570AD2068DE5D003F4EBD /* BaseNavigationController.h */,
 			);
 			path = Base;
