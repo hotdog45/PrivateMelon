@@ -25,6 +25,7 @@
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back_personal_back"] style:UIBarButtonItemStylePlain target:self action:@selector(goBackAction)];
     }
     
+    
 }
 
 - (void)goBackAction{

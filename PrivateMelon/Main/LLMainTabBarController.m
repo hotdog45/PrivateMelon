@@ -7,15 +7,22 @@
 //
 
 #import "LLMainTabBarController.h"
-#import "LLTest1ViewController.h"
-#import "LLTest2ViewController.h"
-#import "LLTabBar.h"
-#import "AppDelegate.h"
 #import "BaseNavigationController.h"
 
+#import "LLMomentsVC.h"
+#import "LLDiscoverVC.h"
+#import "LLMessageVC.h"
+#import "LLMineVC.h"
+
+#import "UCCustomTabBar.h"
 
 
-@interface LLMainTabBarController ()<LLTabBarDelegate, UIActionSheetDelegate>
+@interface LLMainTabBarController ()<UCCustomTabBarDelegate,UITabBarControllerDelegate>
+{
+    NSInteger  selectIndex;
+}
+@property (nonatomic, assign) NSInteger indexFlag;
+@property (nonatomic, strong) NSMutableArray *controllersArr;
 
 @end
 
@@ -23,41 +30,100 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tabBar.tintColor = [UIColor whiteColor];
+    self.delegate = self;
+    self.tabBar.translucent = NO;
+    
     [self initControllers];
 }
 
-
-#pragma mark -- Initial Methods
-
 - (void)initControllers
 {
-    BaseNavigationController *homeVC = [[BaseNavigationController alloc] initWithRootViewController:[LLTest1ViewController new]];
-    BaseNavigationController *foundVC = [[BaseNavigationController alloc] initWithRootViewController:[LLTest2ViewController new]];
-    BaseNavigationController *messageVC = [[BaseNavigationController alloc] initWithRootViewController:[LLTest1ViewController new]];
-    BaseNavigationController *mineVC = [[BaseNavigationController alloc] initWithRootViewController:[LLTest2ViewController new]];
-
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[homeVC, foundVC, messageVC, mineVC];
     
-    [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
-    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
-    LLTabBar *tabBar = [[LLTabBar alloc] initWithFrame:tabBarController.tabBar.bounds];
-    tabBar.tabBarItemAttributes = @[@{kLLTabBarItemAttributeTitle : @"好友圈", kLLTabBarItemAttributeNormalImageName : @"home_normal", kLLTabBarItemAttributeSelectedImageName : @"home_highlight", kLLTabBarItemAttributeType : @(LLTabBarItemNormal)},
-                                    @{kLLTabBarItemAttributeTitle : @"发现", kLLTabBarItemAttributeNormalImageName : @"mycity_normal", kLLTabBarItemAttributeSelectedImageName : @"mycity_highlight", kLLTabBarItemAttributeType : @(LLTabBarItemNormal)},
-                                    @{kLLTabBarItemAttributeTitle : @"", kLLTabBarItemAttributeNormalImageName : @"post_normal", kLLTabBarItemAttributeSelectedImageName : @"post_normal", kLLTabBarItemAttributeType : @(LLTabBarItemRise)},
-                                    @{kLLTabBarItemAttributeTitle : @"消息", kLLTabBarItemAttributeNormalImageName : @"message_normal", kLLTabBarItemAttributeSelectedImageName : @"message_highlight", kLLTabBarItemAttributeType : @(LLTabBarItemNormal)},
-                                    @{kLLTabBarItemAttributeTitle : @"自己", kLLTabBarItemAttributeNormalImageName : @"account_normal", kLLTabBarItemAttributeSelectedImageName : @"account_highlight", kLLTabBarItemAttributeType : @(LLTabBarItemNormal)}];
+    LLMomentsVC *vc1 = [[LLMomentsVC alloc] init];
+    [self addChildViewController:vc1 image:@"home_normal" selectedImage:@"home_highlight" title:@"好友圈"];
+    [self.controllersArr addObject:vc1];
     
-    tabBar.delegate = self;
-    [tabBarController.tabBar addSubview:tabBar];
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    appDelegate.window.rootViewController = tabBarController;
+    LLDiscoverVC *vc2 = [[LLDiscoverVC alloc] init];
+    [self addChildViewController:vc2 image:@"mycity_normal" selectedImage:@"mycity_highlight" title:@"发现"];
+    [self.controllersArr addObject:vc2];
+    
+    LLMessageVC *vc3 = [[LLMessageVC alloc] init];
+    [self addChildViewController:vc3 image:@"message_normal" selectedImage:@"message_highlight" title:@"消息"];
+    [self.controllersArr addObject:vc3];
+    
+    //我
+    LLMineVC *profile = [[LLMineVC alloc]init];
+    [self addChildViewController:profile image:@"account_normal" selectedImage:@"account_highlight" title:@"自己"];
+    [self.controllersArr addObject:profile];
+    
+    UCCustomTabBar *tabBar = [[UCCustomTabBar alloc]init];
+    tabBar.customTabBarDelegate = self;
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+}
+#pragma mark -- Initial Methods
+/**
+ *  添加子控制器
+ *
+ *  @param childViewController 子控制器
+ *  @param image               tabBarItem正常状态图片
+ *  @param selectedImage       tabBarItem选中状态图片
+ *  @param title               标题
+ */
+- (void)addChildViewController:(UIViewController *)childViewController image:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title
+{
+    
+    //标题
+    childViewController.title = title;
+    
+    //tabBarItem图片
+    childViewController.tabBarItem.image = [UIImage imageNamed:image];
+    childViewController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    //tabBarItem字体的设置
+    //正常状态
+    NSMutableDictionary *normalText = [NSMutableDictionary dictionary];
+    normalText[NSForegroundColorAttributeName] = [UIColor colorWithRed:123/255.0 green:123/255.0 blue:123/255.0 alpha:1.0];
+    [childViewController.tabBarItem setTitleTextAttributes:normalText forState:UIControlStateNormal];
+    
+    //选中状态
+    NSMutableDictionary *selectedText = [NSMutableDictionary dictionary];
+    selectedText[NSForegroundColorAttributeName] = LRRGBColor(253, 150, 30);
+    [childViewController.tabBarItem setTitleTextAttributes:selectedText forState:UIControlStateSelected];
+    
+    BaseNavigationController *navgationVC = [[BaseNavigationController alloc] initWithRootViewController:childViewController];
+    [self addChildViewController:navgationVC];
 }
 
 
-#pragma mark - LLTabBarDelegate
 
-- (void)tabBarDidSelectedRiseButton {
+
+#pragma mark -- UITabBarControllerDelegate
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+   
+    return true;
+}
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    selectIndex = [self.tabBar.items indexOfObject:item];
+}
+
+
+
+
+#pragma mark - Target Methods
+#pragma mark - UCCustomTabBarDelegate
+
+- (void)addBtnDidClick:(UCCustomTabBar *)tabBar
+{
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     UITabBarController *tabBarController = (UITabBarController *)appDelegate.window.rootViewController;
     UIViewController *viewController = tabBarController.selectedViewController;
@@ -68,6 +134,17 @@
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:@"发布分享", @"发布活动", @"发布交换", nil];
     [actionSheet showInView:viewController.view];
+}
+
+#pragma mark - Getter Methods
+
+- (NSMutableArray *)controllersArr
+{
+    if (nil == _controllersArr) {
+        _controllersArr = [[NSMutableArray alloc] initWithCapacity:5];
+    }
+    
+    return _controllersArr;
 }
 
 #pragma mark - UIActionSheetDelegate

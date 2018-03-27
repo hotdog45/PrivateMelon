@@ -23,8 +23,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [LLMainTabBarController new];
-    
+    self.window.rootViewController = [LLMainTabBarController new];
     return YES;
 }
 

@@ -32,21 +32,28 @@
     param = @{ @"page" : @0,
                @"perPage" : @50,
                };
+    [MBProgressHUD showPHUD];
     [[LLTestNetWork sharedInstance] getUniDataWithParameters:param Complete:^(LLSchoolListModel *list) {
         _testText.text = list.toJSONString;
+        [MBProgressHUD hideHUD];
     } failed:^(NSString *error) {
         _testText.text = error;
+        [MBProgressHUD hideHUD];
     }];
+    
+    
+    
 }
 
 - (IBAction)test2:(id)sender {
 
-   
+    
     NSDictionary *param;
     param = @{ @"page" : @0,
                @"perPage" : @50,
                };
     [[LLTestNetWork sharedInstance] getLLUCWithParameters:param Complete:^(UCUCityBaseListMdoel *list) {
+        [MBProgressHUD showSuccess:@"成功"];
         _testText.text = list.toJSONString;
     } failed:^(NSString *error) {
         _testText.text = error;

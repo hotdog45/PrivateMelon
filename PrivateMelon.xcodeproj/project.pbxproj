@@ -34,8 +34,18 @@
 		368570E22068DE5D003F4EBD /* HXQWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570C22068DE5D003F4EBD /* HXQWebService.m */; };
 		368570E32068DE5D003F4EBD /* HXWebServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570C32068DE5D003F4EBD /* HXWebServiceModel.m */; };
 		368570E42068DE5D003F4EBD /* HXWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570C42068DE5D003F4EBD /* HXWebService.m */; };
-		368570E52068DE5D003F4EBD /* LLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570CA2068DE5D003F4EBD /* LLTabBarItem.m */; };
-		368570E62068DE5D003F4EBD /* LLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570CB2068DE5D003F4EBD /* LLTabBar.m */; };
+		368570E92068E58F003F4EBD /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570E82068E58F003F4EBD /* MBProgressHUD+Extension.m */; };
+		368570F12068ED9E003F4EBD /* LLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570F02068ED9E003F4EBD /* LLUserModel.m */; };
+		368570F42068EDFD003F4EBD /* UCLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570F22068EDFD003F4EBD /* UCLoginManager.m */; };
+		368570F7206A1F84003F4EBD /* LLMomentsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570F6206A1F83003F4EBD /* LLMomentsVC.m */; };
+		368570FA206A1FCA003F4EBD /* LLDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570F9206A1FCA003F4EBD /* LLDiscoverVC.m */; };
+		368570FD206A1FFB003F4EBD /* LLMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570FC206A1FFB003F4EBD /* LLMessageVC.m */; };
+		36857100206A201B003F4EBD /* LLMineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 368570FF206A201B003F4EBD /* LLMineVC.m */; };
+		36857104206A2072003F4EBD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36857102206A2072003F4EBD /* LoginViewController.m */; };
+		36857105206A2072003F4EBD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36857103206A2072003F4EBD /* LoginViewController.xib */; };
+		36857111206A346D003F4EBD /* UCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685710F206A346D003F4EBD /* UCCustomTabBar.m */; };
+		36857116206A34B3003F4EBD /* NSDictionary+BBDicCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36857112206A34B2003F4EBD /* NSDictionary+BBDicCategory.m */; };
+		36857117206A34B3003F4EBD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 36857115206A34B3003F4EBD /* UIView+Extension.m */; };
 		FCBD771FE6CA6917FA1C1EC8 /* Pods_PrivateMelon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0B9EB5BC3C89B76A4B657E /* Pods_PrivateMelon.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,10 +117,31 @@
 		368570C32068DE5D003F4EBD /* HXWebServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWebServiceModel.m; sourceTree = "<group>"; };
 		368570C42068DE5D003F4EBD /* HXWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWebService.m; sourceTree = "<group>"; };
 		368570C52068DE5D003F4EBD /* HXQWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXQWebService.h; sourceTree = "<group>"; };
-		368570C82068DE5D003F4EBD /* LLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBar.h; sourceTree = "<group>"; };
-		368570C92068DE5D003F4EBD /* LLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTabBarItem.h; sourceTree = "<group>"; };
-		368570CA2068DE5D003F4EBD /* LLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBarItem.m; sourceTree = "<group>"; };
-		368570CB2068DE5D003F4EBD /* LLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTabBar.m; sourceTree = "<group>"; };
+		368570E72068E58F003F4EBD /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		368570E82068E58F003F4EBD /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		368570EF2068ED9E003F4EBD /* LLUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLUserModel.h; sourceTree = "<group>"; };
+		368570F02068ED9E003F4EBD /* LLUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLUserModel.m; sourceTree = "<group>"; };
+		368570F22068EDFD003F4EBD /* UCLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCLoginManager.m; sourceTree = "<group>"; };
+		368570F32068EDFD003F4EBD /* UCLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCLoginManager.h; sourceTree = "<group>"; };
+		368570F5206A1F83003F4EBD /* LLMomentsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLMomentsVC.h; sourceTree = "<group>"; };
+		368570F6206A1F83003F4EBD /* LLMomentsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLMomentsVC.m; sourceTree = "<group>"; };
+		368570F8206A1FCA003F4EBD /* LLDiscoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDiscoverVC.h; sourceTree = "<group>"; };
+		368570F9206A1FCA003F4EBD /* LLDiscoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLDiscoverVC.m; sourceTree = "<group>"; };
+		368570FB206A1FFB003F4EBD /* LLMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLMessageVC.h; sourceTree = "<group>"; };
+		368570FC206A1FFB003F4EBD /* LLMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLMessageVC.m; sourceTree = "<group>"; };
+		368570FE206A201B003F4EBD /* LLMineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLMineVC.h; sourceTree = "<group>"; };
+		368570FF206A201B003F4EBD /* LLMineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLMineVC.m; sourceTree = "<group>"; };
+		36857101206A2072003F4EBD /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		36857102206A2072003F4EBD /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		36857103206A2072003F4EBD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		36857106206A21A1003F4EBD /* LLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLHeader.h; sourceTree = "<group>"; };
+		36857108206A227E003F4EBD /* MacroDefinitionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinitionHeader.h; sourceTree = "<group>"; };
+		3685710F206A346D003F4EBD /* UCCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCCustomTabBar.m; sourceTree = "<group>"; };
+		36857110206A346D003F4EBD /* UCCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCustomTabBar.h; sourceTree = "<group>"; };
+		36857112206A34B2003F4EBD /* NSDictionary+BBDicCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BBDicCategory.m"; sourceTree = "<group>"; };
+		36857113206A34B3003F4EBD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		36857114206A34B3003F4EBD /* NSDictionary+BBDicCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BBDicCategory.h"; sourceTree = "<group>"; };
+		36857115206A34B3003F4EBD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		A159C7FC158718B0F1A3A1C9 /* Pods-PrivateMelon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateMelon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateMelon/Pods-PrivateMelon.debug.xcconfig"; sourceTree = "<group>"; };
 		D39E0819ABAA7196D4327138 /* Pods-PrivateMelon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateMelon.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateMelon/Pods-PrivateMelon.release.xcconfig"; sourceTree = "<group>"; };
 		EF0B9EB5BC3C89B76A4B657E /* Pods_PrivateMelon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivateMelon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +245,7 @@
 		3685706F2068DE5C003F4EBD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				368570EA2068ED76003F4EBD /* Login */,
 				368570702068DE5C003F4EBD /* Home */,
 				368570752068DE5C003F4EBD /* Discover */,
 				3685707A2068DE5C003F4EBD /* Other */,
@@ -245,6 +277,8 @@
 		368570722068DE5C003F4EBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				368570F5206A1F83003F4EBD /* LLMomentsVC.h */,
+				368570F6206A1F83003F4EBD /* LLMomentsVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +318,8 @@
 		368570772068DE5C003F4EBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				368570F8206A1FCA003F4EBD /* LLDiscoverVC.h */,
+				368570F9206A1FCA003F4EBD /* LLDiscoverVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,6 +366,8 @@
 		3685707D2068DE5C003F4EBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				368570FB206A1FFB003F4EBD /* LLMessageVC.h */,
+				368570FC206A1FFB003F4EBD /* LLMessageVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +446,8 @@
 		368570872068DE5C003F4EBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				368570FE206A201B003F4EBD /* LLMineVC.h */,
+				368570FF206A201B003F4EBD /* LLMineVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -448,6 +488,12 @@
 		3685708D2068DE5C003F4EBD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				36857114206A34B3003F4EBD /* NSDictionary+BBDicCategory.h */,
+				36857112206A34B2003F4EBD /* NSDictionary+BBDicCategory.m */,
+				36857113206A34B3003F4EBD /* UIView+Extension.h */,
+				36857115206A34B3003F4EBD /* UIView+Extension.m */,
+				368570E72068E58F003F4EBD /* MBProgressHUD+Extension.h */,
+				368570E82068E58F003F4EBD /* MBProgressHUD+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -455,6 +501,8 @@
 		3685708E2068DE5C003F4EBD /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				36857106206A21A1003F4EBD /* LLHeader.h */,
+				36857108206A227E003F4EBD /* MacroDefinitionHeader.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -503,7 +551,7 @@
 		368570A62068DE5D003F4EBD /* Skeleton */ = {
 			isa = PBXGroup;
 			children = (
-				368570A72068DE5D003F4EBD /* Baes */,
+				368570A72068DE5D003F4EBD /* Base */,
 				368570AE2068DE5D003F4EBD /* Resources */,
 				368570B52068DE5D003F4EBD /* ThirdPart */,
 				368570B62068DE5D003F4EBD /* WebService */,
@@ -512,7 +560,7 @@
 			path = Skeleton;
 			sourceTree = "<group>";
 		};
-		368570A72068DE5D003F4EBD /* Baes */ = {
+		368570A72068DE5D003F4EBD /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				368570A82068DE5D003F4EBD /* HXBaseJSONModel.m */,
@@ -522,7 +570,7 @@
 				368570AC2068DE5D003F4EBD /* LLBaseViewController.h */,
 				368570AD2068DE5D003F4EBD /* BaseNavigationController.h */,
 			);
-			path = Baes;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		368570AE2068DE5D003F4EBD /* Resources */ = {
@@ -597,12 +645,56 @@
 		368570C72068DE5D003F4EBD /* LLTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				368570C82068DE5D003F4EBD /* LLTabBar.h */,
-				368570C92068DE5D003F4EBD /* LLTabBarItem.h */,
-				368570CA2068DE5D003F4EBD /* LLTabBarItem.m */,
-				368570CB2068DE5D003F4EBD /* LLTabBar.m */,
+				36857110206A346D003F4EBD /* UCCustomTabBar.h */,
+				3685710F206A346D003F4EBD /* UCCustomTabBar.m */,
 			);
 			path = LLTabBar;
+			sourceTree = "<group>";
+		};
+		368570EA2068ED76003F4EBD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				368570EB2068ED76003F4EBD /* Other */,
+				368570EC2068ED76003F4EBD /* Controller */,
+				368570ED2068ED76003F4EBD /* Model */,
+				368570EE2068ED76003F4EBD /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		368570EB2068ED76003F4EBD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				368570F32068EDFD003F4EBD /* UCLoginManager.h */,
+				368570F22068EDFD003F4EBD /* UCLoginManager.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		368570EC2068ED76003F4EBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36857101206A2072003F4EBD /* LoginViewController.h */,
+				36857102206A2072003F4EBD /* LoginViewController.m */,
+				36857103206A2072003F4EBD /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		368570ED2068ED76003F4EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				368570EF2068ED9E003F4EBD /* LLUserModel.h */,
+				368570F02068ED9E003F4EBD /* LLUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		368570EE2068ED76003F4EBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3E5877ABAAD6FDCBC5A09441 /* Frameworks */ = {
@@ -723,6 +815,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36857105206A2072003F4EBD /* LoginViewController.xib in Resources */,
 				368570D72068DE5D003F4EBD /* LLTest2ViewController.xib in Resources */,
 				368570D52068DE5D003F4EBD /* LLtest3ViewController.xib in Resources */,
 				368570DE2068DE5D003F4EBD /* Info.plist in Resources */,
@@ -826,21 +919,30 @@
 				368570D92068DE5D003F4EBD /* BaseNavigationController.m in Sources */,
 				368570D22068DE5D003F4EBD /* LLTest2ViewController.m in Sources */,
 				368570DA2068DE5D003F4EBD /* LLBaseViewController.m in Sources */,
+				36857104206A2072003F4EBD /* LoginViewController.m in Sources */,
 				368570D32068DE5D003F4EBD /* ViewController.m in Sources */,
-				368570E62068DE5D003F4EBD /* LLTabBar.m in Sources */,
+				368570FA206A1FCA003F4EBD /* LLDiscoverVC.m in Sources */,
+				36857111206A346D003F4EBD /* UCCustomTabBar.m in Sources */,
+				368570FD206A1FFB003F4EBD /* LLMessageVC.m in Sources */,
+				36857116206A34B3003F4EBD /* NSDictionary+BBDicCategory.m in Sources */,
+				368570E92068E58F003F4EBD /* MBProgressHUD+Extension.m in Sources */,
 				368570E02068DE5D003F4EBD /* HXAppDeviceHelper.m in Sources */,
 				368570D62068DE5D003F4EBD /* LLTest1ViewController.m in Sources */,
 				368570CF2068DE5D003F4EBD /* LLtest3ViewController.m in Sources */,
 				368570E42068DE5D003F4EBD /* HXWebService.m in Sources */,
 				368570CD2068DE5D003F4EBD /* main.m in Sources */,
 				368570E12068DE5D003F4EBD /* HXAppConfig.m in Sources */,
+				36857100206A201B003F4EBD /* LLMineVC.m in Sources */,
 				368570E32068DE5D003F4EBD /* HXWebServiceModel.m in Sources */,
 				368570E22068DE5D003F4EBD /* HXQWebService.m in Sources */,
-				368570E52068DE5D003F4EBD /* LLTabBarItem.m in Sources */,
+				36857117206A34B3003F4EBD /* UIView+Extension.m in Sources */,
 				368570DF2068DE5D003F4EBD /* ApplicationSettings.m in Sources */,
 				368570D82068DE5D003F4EBD /* HXBaseJSONModel.m in Sources */,
+				368570F42068EDFD003F4EBD /* UCLoginManager.m in Sources */,
 				368570CC2068DE5D003F4EBD /* LLMainTabBarController.m in Sources */,
+				368570F7206A1F84003F4EBD /* LLMomentsVC.m in Sources */,
 				368570CE2068DE5D003F4EBD /* AppDelegate.m in Sources */,
+				368570F12068ED9E003F4EBD /* LLUserModel.m in Sources */,
 				368570D02068DE5D003F4EBD /* UCBannerRecommedModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
