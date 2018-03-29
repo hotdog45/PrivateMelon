@@ -45,6 +45,10 @@
 		36857111206A346D003F4EBD /* UCCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685710F206A346D003F4EBD /* UCCustomTabBar.m */; };
 		36857116206A34B3003F4EBD /* NSDictionary+BBDicCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36857112206A34B2003F4EBD /* NSDictionary+BBDicCategory.m */; };
 		36857117206A34B3003F4EBD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 36857115206A34B3003F4EBD /* UIView+Extension.m */; };
+		3685711B206B81D0003F4EBD /* LLRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 36857119206B81D0003F4EBD /* LLRegisterVC.m */; };
+		3685711C206B81D0003F4EBD /* LLRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3685711A206B81D0003F4EBD /* LLRegisterVC.xib */; };
+		36857120206B8CF2003F4EBD /* LLSelectInterestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685711E206B8CF2003F4EBD /* LLSelectInterestVC.m */; };
+		36857121206B8CF2003F4EBD /* LLSelectInterestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3685711F206B8CF2003F4EBD /* LLSelectInterestVC.xib */; };
 		FCBD771FE6CA6917FA1C1EC8 /* Pods_PrivateMelon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0B9EB5BC3C89B76A4B657E /* Pods_PrivateMelon.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +143,12 @@
 		36857113206A34B3003F4EBD /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		36857114206A34B3003F4EBD /* NSDictionary+BBDicCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BBDicCategory.h"; sourceTree = "<group>"; };
 		36857115206A34B3003F4EBD /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		36857118206B81D0003F4EBD /* LLRegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLRegisterVC.h; sourceTree = "<group>"; };
+		36857119206B81D0003F4EBD /* LLRegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLRegisterVC.m; sourceTree = "<group>"; };
+		3685711A206B81D0003F4EBD /* LLRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLRegisterVC.xib; sourceTree = "<group>"; };
+		3685711D206B8CF2003F4EBD /* LLSelectInterestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLSelectInterestVC.h; sourceTree = "<group>"; };
+		3685711E206B8CF2003F4EBD /* LLSelectInterestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLSelectInterestVC.m; sourceTree = "<group>"; };
+		3685711F206B8CF2003F4EBD /* LLSelectInterestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLSelectInterestVC.xib; sourceTree = "<group>"; };
 		A159C7FC158718B0F1A3A1C9 /* Pods-PrivateMelon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateMelon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateMelon/Pods-PrivateMelon.debug.xcconfig"; sourceTree = "<group>"; };
 		D39E0819ABAA7196D4327138 /* Pods-PrivateMelon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateMelon.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateMelon/Pods-PrivateMelon.release.xcconfig"; sourceTree = "<group>"; };
 		EF0B9EB5BC3C89B76A4B657E /* Pods_PrivateMelon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivateMelon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -558,12 +568,12 @@
 		368570A72068DE5D003F4EBD /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				368570AB2068DE5D003F4EBD /* HXBaseJSONModel.h */,
 				368570A82068DE5D003F4EBD /* HXBaseJSONModel.m */,
+				368570AD2068DE5D003F4EBD /* BaseNavigationController.h */,
 				368570A92068DE5D003F4EBD /* BaseNavigationController.m */,
 				368570AC2068DE5D003F4EBD /* LLBaseViewController.h */,
 				368570AA2068DE5D003F4EBD /* LLBaseViewController.m */,
-				368570AB2068DE5D003F4EBD /* HXBaseJSONModel.h */,
-				368570AD2068DE5D003F4EBD /* BaseNavigationController.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -672,6 +682,12 @@
 				36857101206A2072003F4EBD /* LoginViewController.h */,
 				36857102206A2072003F4EBD /* LoginViewController.m */,
 				36857103206A2072003F4EBD /* LoginViewController.xib */,
+				36857118206B81D0003F4EBD /* LLRegisterVC.h */,
+				36857119206B81D0003F4EBD /* LLRegisterVC.m */,
+				3685711A206B81D0003F4EBD /* LLRegisterVC.xib */,
+				3685711D206B8CF2003F4EBD /* LLSelectInterestVC.h */,
+				3685711E206B8CF2003F4EBD /* LLSelectInterestVC.m */,
+				3685711F206B8CF2003F4EBD /* LLSelectInterestVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -812,12 +828,14 @@
 			files = (
 				36857105206A2072003F4EBD /* LoginViewController.xib in Resources */,
 				368570D72068DE5D003F4EBD /* LLTest2ViewController.xib in Resources */,
+				36857121206B8CF2003F4EBD /* LLSelectInterestVC.xib in Resources */,
 				368570D52068DE5D003F4EBD /* LLtest3ViewController.xib in Resources */,
 				368570DE2068DE5D003F4EBD /* Info.plist in Resources */,
 				368570D42068DE5D003F4EBD /* LLTest1ViewController.xib in Resources */,
 				368570DD2068DE5D003F4EBD /* Main.storyboard in Resources */,
 				368570DC2068DE5D003F4EBD /* LaunchScreen.storyboard in Resources */,
 				368570DB2068DE5D003F4EBD /* Assets.xcassets in Resources */,
+				3685711C206B81D0003F4EBD /* LLRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,11 +940,13 @@
 				368570E92068E58F003F4EBD /* MBProgressHUD+Extension.m in Sources */,
 				368570E02068DE5D003F4EBD /* HXAppDeviceHelper.m in Sources */,
 				368570D62068DE5D003F4EBD /* LLTest1ViewController.m in Sources */,
+				3685711B206B81D0003F4EBD /* LLRegisterVC.m in Sources */,
 				368570CF2068DE5D003F4EBD /* LLtest3ViewController.m in Sources */,
 				368570E42068DE5D003F4EBD /* HXWebService.m in Sources */,
 				368570CD2068DE5D003F4EBD /* main.m in Sources */,
 				368570E12068DE5D003F4EBD /* HXAppConfig.m in Sources */,
 				36857100206A201B003F4EBD /* LLMineVC.m in Sources */,
+				36857120206B8CF2003F4EBD /* LLSelectInterestVC.m in Sources */,
 				368570E32068DE5D003F4EBD /* HXWebServiceModel.m in Sources */,
 				368570E22068DE5D003F4EBD /* HXQWebService.m in Sources */,
 				36857117206A34B3003F4EBD /* UIView+Extension.m in Sources */,
@@ -1110,6 +1130,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = PrivateMelon/Support/PCH/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/PrivateMelon/Skeleton/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sigua.PrivateMelon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1127,6 +1148,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = PrivateMelon/Support/PCH/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/PrivateMelon/Skeleton/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sigua.PrivateMelon;
 				PRODUCT_NAME = "$(TARGET_NAME)";

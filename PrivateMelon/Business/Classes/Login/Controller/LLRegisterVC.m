@@ -1,23 +1,24 @@
 //
-//  LoginViewController.m
+//  LLRegisterVC.m
 //  PrivateMelon
 //
-//  Created by 李顺风 on 2018/3/27.
+//  Created by 李顺风 on 2018/3/28.
 //  Copyright © 2018年 李顺风. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "LLRegisterVC.h"
 
-@interface LoginViewController ()
-
+@interface LLRegisterVC ()
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 @property (weak, nonatomic) IBOutlet UITextField *pwdLab;
 
-@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 
-@property (weak, nonatomic) IBOutlet UIButton *forgotBtn;
+//@property (weak, nonatomic) IBOutlet UIButton *registerBtn;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *goLoginBtn;
 
 @property (weak, nonatomic) IBOutlet UIButton *wxBtn;
 
@@ -26,17 +27,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *wbBtn;
 
 
-
 @end
 
-@implementation LoginViewController
+@implementation LLRegisterVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    // Do any additional setup after loading the view from its nib.
 }
-
-
 
 - (IBAction)btnClick:(id)sender {
     switch ([sender tag]) {
@@ -69,15 +67,6 @@
     
     
 }
-
-
-
-
-
-
-
-
-
 
 
 @end
