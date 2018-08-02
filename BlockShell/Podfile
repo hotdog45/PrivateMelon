@@ -1,0 +1,30 @@
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+target 'BlockShell' do
+use_frameworks!
+
+
+pod 'AFNetworking', '= 3.1.0'
+pod 'SAMKeychain', '= 1.5.3'
+pod 'SDWebImage', '= 4.2.2'
+pod 'MBProgressHUD'
+pod 'JSONModel', '= 1.7.0'
+pod 'MJRefresh', '= 3.1.15.1'
+pod 'IQKeyboardManager', '= 5.0.6'
+pod 'OpenShare','~> 0.0'
+pod 'ReactiveCocoa', '= 2.5'
+#pod 'FWSegmentedControl'   #多段控制器
+
+#pod 'DKFlexibleMenu' #正六边形
+
+#pod 'BHBPopView'  #weib
+
+
+#pod 'Reachability'  # 网络状态检测库,苹果官方承认的
+
+#pod 'Masonry'
+
+
+
+end
